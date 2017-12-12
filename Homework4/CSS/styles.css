@@ -1,0 +1,278 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+main, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, main, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+/* Don't kill focus outline for keyboard users: http://24ways.org/2009/dont-lose-your-focus */
+a:hover, a:active {
+    outline: none;
+}
+
+a, a:hover {
+	text-decoration: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+@import "compass/css3";
+
+.box {
+	color: #000;
+	font-weight: bold;
+	font-size: 14px;
+	text-align: center;
+	background-color: #dddddd;
+}
+
+.head {
+	background-color: #bbbbbb;
+	font-size: 4em;
+	margin-bottom: 40px;
+}
+
+.footer {
+	background-color: #bbbbbb;
+	font-size: 2em;
+	margin-top: 44px;
+}
+
+.flex-container {
+	display: flex;
+	background-color: #000080;
+	font-size: 3em;
+	padding: 40px;
+}
+
+@media only screen and (max-device-width : 768px) {
+
+	.box {
+		width: calc(100% - 18px);
+		border-left: 15px solid #ffffff;
+		border-right: 3px solid #ffffff;
+		border-top: 3px solid #ffffff;
+		height: 1350px;
+	}
+
+	.head {
+		height: 200px;
+		line-height: 200px;	
+	}
+
+	.footer {
+		height: 115px;	
+		line-height: 160px;
+	}
+
+	.flex-container {
+		flex-direction: column;
+	}
+
+	.flex-item {
+		width: 100%;
+		height: 180px;
+		line-height: 180px;
+	}
+
+	.flex-item1 {
+		background-color: #f08080;
+		order: 1;
+		flex-grow: 1;
+	}
+	
+	.flex-item2 {
+		background-color: #8a2be2;
+		order: 2;
+		flex-grow: 1;
+	}
+
+	.flex-item3 {
+		background-color: #a52a2a;
+		order: 3;
+		flex-grow: 1;
+	}
+
+	.flex-item4 {
+		background-color: #20b2aa;
+		order: 4;
+		flex-grow: 1;
+	}
+
+	.flex-item5 {
+		background-color: #4169e1;
+		order: 5;
+		flex-grow: 1;
+	}
+
+}
+
+@media only screen and (min-device-width : 769px) and (max-device-width : 1023px) {
+
+	.box {
+		width: calc(100% - 16px);
+		border-left: 8px solid #ffffff;
+		border-right: 8px solid #ffffff;
+		border-top: 3px solid #ffffff;
+		border-bottom: 15px solid #ffffff;
+		height: 1064px;
+	}
+
+	.head {
+		height: 190px;
+		line-height: 190px;	
+	}
+
+	.footer {
+		height: 165px;	
+		line-height: 165px;
+	}
+
+	.flex-container {
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+
+	.flex-item {
+		height: 175px;
+		line-height: 175px;
+	}
+
+	.flex-item1 {
+		background-color: #f08080;
+		order: 1;
+		flex-grow: 1;
+		width: 50%;
+	}
+	
+	.flex-item2 {
+		background-color: #8a2be2;
+		order: 2;
+		flex-grow: 1;
+		width: 50%;
+	}
+
+	.flex-item3 {
+		background-color: #a52a2a;
+		order: 3;
+		flex-grow: 1;
+		width: 50%;
+	}
+
+	.flex-item4 {
+		background-color: #20b2aa;
+		order: 5;
+		flex-grow: 2;
+		width: 100%;
+	}
+
+	.flex-item5 {
+		background-color: #4169e1;
+		order: 4;
+		flex-grow: 1;
+		width: 50%;
+	}
+
+}
+
+@media only screen and (min-device-width : 1024px) {
+
+	.box {
+		width: calc(100% - 13px);
+		border-left: 8px solid #ffffff;
+		border-right: 5px solid #ffffff;
+		border-top: 5px solid #ffffff;
+		border-bottom: 5px solid #ffffff;
+		height: 882px;
+	}
+
+	.head {
+		height: 195px;
+		line-height: 195px;	
+	}
+
+	.footer {
+		height: 165px;	
+		line-height: 165px;
+	}
+
+	.flex-container {
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+
+	.flex-item {
+		height: 175px;
+		line-height: 175px;
+	}
+
+	.flex-item1 {
+		background-color: #f08080;
+		order: 1;
+		flex-grow: 2;
+		width: 33.33%;
+	}
+	
+	.flex-item2 {
+		background-color: #8a2be2;
+		order: 2;
+		flex-grow: 2;
+		width: 33.33%;
+	}
+
+	.flex-item3 {
+		background-color: #a52a2a;
+		order: 3;
+		flex-grow: 2;
+		width: 33.33%;
+	}
+
+	.flex-item4 {
+		background-color: #20b2aa;
+		order: 4;
+		flex-grow: 3;
+		width: 50%;
+	}
+
+	.flex-item5 {
+		background-color: #4169e1;
+		order: 5;
+		flex-grow: 3;
+		width: 50%;
+	}
+}
