@@ -1,0 +1,38 @@
+﻿<html>
+<head>
+    <title>Calc</title>
+    <script type="text/javascript">
+   
+        var res;
+     
+        alert("To calculate, click OK");
+        var a = prompt("Enter first number:");
+        var b = prompt("Enter second number:");
+        var sign = prompt("Enter the mathematical operation (+, -, * or /):");
+
+        switch (sign) {
+        case "+":
+            res = Number(a) + Number(b);
+            alert("Result (a + b) = " + res);
+            break;
+        case "-":
+            res = Number(a) - Number(b);
+            alert("Result (a - b) = " + res);
+            break;
+        case "*":
+            res = Number(a) * Number(b);
+            alert("Result (a * b) = " + res);
+            break;
+        case "/":
+            res = Number(a) / Number(b);
+            alert("Result (a / b) = " + res);
+            break;            
+        default:
+            alert("Udefined operation");
+            break;
+        }
+    </script>
+</head>
+<body>
+</body>
+</html>
